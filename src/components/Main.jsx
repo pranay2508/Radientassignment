@@ -2,12 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import CheckCircleOutlinedIcon from "@mui/icons-material/CheckCircleOutlined";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 const Container = styled.div``;
 
 const Header = styled.div`
   /* text-align: center; */
   padding-left: 275px;
-  font-size: 50px;
+  font-size: 47px;
   padding-top: 22px;
   color: #2c384a;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -27,9 +29,9 @@ const Headercontainer = styled.div`
 `;
 
 const Heading = styled.p`
-  color: #4b5665;
+  color: #626e79;
   padding-top: 4px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: lighter;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -42,6 +44,35 @@ const Check = styled(CheckCircleOutlinedIcon)`
 const Info = styled(InfoOutlinedIcon)`
   color: #626e79;
   margin-right: 10px;
+`;
+
+const ArrowDown = styled(KeyboardArrowDownIcon)`
+  color: #626e79;
+`;
+const Arrowright = styled(KeyboardArrowRightIcon)`
+  color: #626e79;
+  margin-right: 8px;
+  /* margin-bottom: 4px; */
+`;
+
+const SubHeaderContainer = styled.div`
+  display: flex;
+  padding-left: 300px;
+  color: #626e79;
+  padding-top: 4px;
+  font-weight: lighter;
+  font-size: 13px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+`;
+const HeaderListing = styled.div`
+  display: flex;
+  padding-left: 275px;
+  color: #626e79;
+  padding-top: 20px;
+  font-size: 13px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 `;
 
 const Main = () => {
@@ -61,11 +92,58 @@ const Main = () => {
         <Info />
         <Heading>
           <div>
-            <p>Advertising Disclosure </p>
+            <p style={{ marginRight: "255px" }}>Advertising Disclosure </p>
           </div>
         </Heading>
+        <Heading>
+          <div>
+            <p>Top relevent</p>
+          </div>
+        </Heading>
+        <ArrowDown />
       </Headercontainer>
       <HorizontalLine />
+      <SubHeaderContainer>
+        <div>
+          <span style={{ marginRight: "50px" }}>Tools</span>
+        </div>
+        <div>
+          <span style={{ marginRight: "50px" }}>AWS Builder</span>
+        </div>
+        <div>
+          <span style={{ marginRight: "50px" }}>Start Build</span>
+        </div>
+        <div>
+          <span style={{ marginRight: "50px" }}>Build Supplies</span>
+        </div>
+        <div>
+          <span style={{ marginRight: "50px" }}>Tooling</span>
+        </div>
+        <div>
+          <span>BlueHosting</span>
+        </div>
+      </SubHeaderContainer>
+      <HeaderListing>
+        <div>
+          <span style={{ marginRight: "20px" }}>Home</span>
+        </div>
+        <Arrowright />
+        <div>
+          <span style={{ marginRight: "20px" }}>Hosting for all </span>
+        </div>
+        <Arrowright />
+        <div>
+          <span style={{ marginRight: "20px" }}>Hosting</span>
+        </div>
+        <Arrowright />
+        <div>
+          <span style={{ marginRight: "20px" }}>Hosting6</span>
+        </div>
+        <Arrowright />
+        <div>
+          <span>Hosting5</span>
+        </div>
+      </HeaderListing>
     </Container>
   );
 };

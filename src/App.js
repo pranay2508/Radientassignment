@@ -1,12 +1,13 @@
+import Main from './components/Main';
 import Nav from './components/Nav';
-import Icon from './components/Icon';
+
 
 
 function App() {
   return (
     <div >
     <Nav/>
-    <Icon/>
+    <Main/>
     </div>
   );
 }

@@ -4,6 +4,10 @@ import CheckCircleOutlinedIcon from "@mui/icons-material/CheckCircleOutlined";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import EmojiEventsOutlinedIcon from "@mui/icons-material/EmojiEventsOutlined";
+import download1 from "../Photos/download1.png"
+
+// all box css are here
 const Container = styled.div``;
 
 const Header = styled.div`
@@ -18,9 +22,9 @@ const Header = styled.div`
 
 const HorizontalLine = styled.hr`
   border: 0;
-  border-top: 1px solid #e1e4e6; /* Adjust color and thickness as needed */
-  width: 65%; /* Ensures the line spans the full width of its container */
-  margin: 15px 0; /* Adjust margin as needed */
+  border-top: 1px solid #e1e4e6;
+  width: 65%;
+  margin: 15px 0;
   margin-left: 275px;
 `;
 
@@ -36,6 +40,63 @@ const Heading = styled.p`
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 `;
+
+const SubHeaderContainer = styled.div`
+  display: flex;
+  padding-left: 300px;
+  color: #626e79;
+  padding-top: 4px;
+  font-weight: lighter;
+  font-size: 13px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+`;
+const HeaderListing = styled.div`
+  display: flex;
+  padding-left: 275px;
+  align-items: center;
+  color: #626e79;
+  padding-top: 20px;
+  font-size: 13px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+`;
+const Box = styled.div`
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  background-color: #ff7724;
+  color: white;
+  width: 136px;
+  margin-left: 275px;
+  height: 34px;
+  margin-top: 20px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  //css for the p tag inside the box
+  & > div > p {
+    /* margin-top:25px;  */
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    padding-left: 8px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+`;
+
+const Data = styled.div`
+padding-left: 275px;
+  display: flex;
+  padding-top: 20px;
+
+`;
+const Firstdata = styled.div`
+`;
+//All icons css are here
 const Check = styled(CheckCircleOutlinedIcon)`
   color: #626e79;
   padding-left: 275px;
@@ -54,25 +115,11 @@ const Arrowright = styled(KeyboardArrowRightIcon)`
   margin-right: 8px;
   /* margin-bottom: 4px; */
 `;
-
-const SubHeaderContainer = styled.div`
-  display: flex;
-  padding-left: 300px;
-  color: #626e79;
-  padding-top: 4px;
-  font-weight: lighter;
-  font-size: 13px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+const Trophy = styled(EmojiEventsOutlinedIcon)`
+  color: white;
 `;
-const HeaderListing = styled.div`
-  display: flex;
-  padding-left: 275px;
-  color: #626e79;
-  padding-top: 20px;
-  font-size: 13px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+const Img = styled.img`
+/* padding-left: 275px; */
 `;
 
 const Main = () => {
@@ -125,25 +172,37 @@ const Main = () => {
       </SubHeaderContainer>
       <HeaderListing>
         <div>
-          <span style={{ marginRight: "20px" }}>Home</span>
+          <span style={{ marginRight: "10px" }}>Home</span>
         </div>
         <Arrowright />
         <div>
-          <span style={{ marginRight: "20px" }}>Hosting for all </span>
+          <span style={{ marginRight: "10px" }}>Hosting for all </span>
         </div>
         <Arrowright />
         <div>
-          <span style={{ marginRight: "20px" }}>Hosting</span>
+          <span style={{ marginRight: "10px" }}>Hosting</span>
         </div>
         <Arrowright />
         <div>
-          <span style={{ marginRight: "20px" }}>Hosting6</span>
+          <span style={{ marginRight: "10px" }}>Hosting6</span>
         </div>
         <Arrowright />
         <div>
           <span>Hosting5</span>
         </div>
       </HeaderListing>
+      <Box>
+        <Trophy />
+        <div>
+          <p>Best Choice</p>
+        </div>
+      </Box>
+      <Data>
+        <Firstdata>
+          <p>1</p>
+          <Img src={download1} alt="hero-image" />
+        </Firstdata>
+      </Data>
     </Container>
   );
 };

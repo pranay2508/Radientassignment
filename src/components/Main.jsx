@@ -5,7 +5,6 @@ import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import EmojiEventsOutlinedIcon from "@mui/icons-material/EmojiEventsOutlined";
-import download1 from "../Photos/download1.png"
 
 // all box css are here
 const Container = styled.div``;
@@ -75,7 +74,8 @@ const Box = styled.div`
   border-bottom-left-radius: 0;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-
+  /* padding-bottom: 4px; */
+  margin-bottom: 20px;
   //css for the p tag inside the box
   & > div > p {
     /* margin-top:25px;  */
@@ -88,14 +88,6 @@ const Box = styled.div`
   }
 `;
 
-const Data = styled.div`
-padding-left: 275px;
-  display: flex;
-  padding-top: 20px;
-
-`;
-const Firstdata = styled.div`
-`;
 //All icons css are here
 const Check = styled(CheckCircleOutlinedIcon)`
   color: #626e79;
@@ -117,9 +109,6 @@ const Arrowright = styled(KeyboardArrowRightIcon)`
 `;
 const Trophy = styled(EmojiEventsOutlinedIcon)`
   color: white;
-`;
-const Img = styled.img`
-/* padding-left: 275px; */
 `;
 
 const Main = () => {
@@ -197,12 +186,6 @@ const Main = () => {
           <p>Best Choice</p>
         </div>
       </Box>
-      <Data>
-        <Firstdata>
-          <p>1</p>
-          <Img src={download1} alt="hero-image" />
-        </Firstdata>
-      </Data>
     </Container>
   );
 };

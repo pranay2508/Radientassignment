@@ -1,7 +1,8 @@
 import Main from './components/Main';
 import Nav from './components/Nav';
 import Middle from './components/Middle';
-
+import DealSection from './components/DealSection';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
     <Nav/>
     <Main/>
     <Middle/>
+    <DealSection/>
+    <Footer/>
     </div>
   );
 }

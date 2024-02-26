@@ -5,7 +5,7 @@ import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 
 const Container = styled.div`
-  display: flex;
+  /* display: flex; */
   /* justify-content: left; */
   padding-left: 275px;
   margin-left: 10px; /* Adjust the margin as needed */
@@ -102,6 +102,144 @@ const RatingContainer = styled.div`
 const Middle = () => {
   return (
     <Container>
+      {/* this is the first div  */}
+      <p
+        style={{
+          color: "#626e79",
+          fontSize: "20px",
+          paddingBottom: "40px",
+        }}
+      >
+        1
+      </p>
+      <Data>
+        <LeftSide>
+          <Img src={download1} alt="Description" />
+          <TextBelowImage>Builder1</TextBelowImage>
+        </LeftSide>
+
+        {/* from here  */}
+
+        <MiddleSide>
+          <span style={{}}>WixPro 72-Inch Responsive Website Builder</span>
+          <span style={{ color: "#626e79" }}>
+            - Comprehensive Digital Platform Creation Tool, Streamlined Design
+            Interface for Professional Websites and Online Stores (Black/Blue)
+          </span>
+          <p style={{ paddingTop: "13px" }}>Main Highlight</p>
+          <p style={{ paddingTop: "13px", paddingLeft: "15px" }}>
+            [What You Get]: Receive the WixPro website builder suite, access to
+            premium design templates, an extensive library of widgets and apps,
+            and detailed step-by-step guides.
+          </p>
+          <Show>
+            <div>Show more</div>
+            <Keydown />
+          </Show>
+          {/* Add content for middle side */}
+        </MiddleSide>
+        <RightSide>
+          <RatingContainer>
+            <Ratingdiv>9.8</Ratingdiv>
+            <Ratingword>Exceptional</Ratingword>
+          </RatingContainer>
+          <InfoIcon style={{ fontSize: "12px" }} />
+        </RightSide>
+      </Data>
+
+      {/* // this is for second  */}
+      <p
+        style={{
+          color: "#626e79",
+          fontSize: "20px",
+          paddingBottom: "40px",
+        }}
+      >
+        1
+      </p>
+      <Data>
+        <LeftSide>
+          <Img src={download1} alt="Description" />
+          <TextBelowImage>Builder1</TextBelowImage>
+        </LeftSide>
+
+        {/* from here  */}
+
+        <MiddleSide>
+          <span style={{}}>WixPro 72-Inch Responsive Website Builder</span>
+          <span style={{ color: "#626e79" }}>
+            - Comprehensive Digital Platform Creation Tool, Streamlined Design
+            Interface for Professional Websites and Online Stores (Black/Blue)
+          </span>
+          <p style={{ paddingTop: "13px" }}>Main Highlight</p>
+          <p style={{ paddingTop: "13px", paddingLeft: "15px" }}>
+            [What You Get]: Receive the WixPro website builder suite, access to
+            premium design templates, an extensive library of widgets and apps,
+            and detailed step-by-step guides.
+          </p>
+          <Show>
+            <div>Show more</div>
+            <Keydown />
+          </Show>
+          {/* Add content for middle side */}
+        </MiddleSide>
+        <RightSide>
+          <RatingContainer>
+            <Ratingdiv>9.8</Ratingdiv>
+            <Ratingword>Exceptional</Ratingword>
+          </RatingContainer>
+          <InfoIcon style={{ fontSize: "12px" }} />
+        </RightSide>
+      </Data>
+
+      {/* 
+//this is for third */}
+      <p
+        style={{
+          color: "#626e79",
+          fontSize: "20px",
+          paddingBottom: "40px",
+        }}
+      >
+        1
+      </p>
+      <Data>
+        <LeftSide>
+          <Img src={download1} alt="Description" />
+          <TextBelowImage>Builder1</TextBelowImage>
+        </LeftSide>
+
+        {/* from here  */}
+
+        <MiddleSide>
+          <span style={{}}>WixPro 72-Inch Responsive Website Builder</span>
+          <span style={{ color: "#626e79" }}>
+            - Comprehensive Digital Platform Creation Tool, Streamlined Design
+            Interface for Professional Websites and Online Stores (Black/Blue)
+          </span>
+          <p style={{ paddingTop: "13px" }}>Main Highlight</p>
+          <p style={{ paddingTop: "13px", paddingLeft: "15px" }}>
+            [What You Get]: Receive the WixPro website builder suite, access to
+            premium design templates, an extensive library of widgets and apps,
+            and detailed step-by-step guides.
+          </p>
+          <Show>
+            <div>Show more</div>
+            <Keydown />
+          </Show>
+          {/* Add content for middle side */}
+        </MiddleSide>
+        <RightSide>
+          <RatingContainer>
+            <Ratingdiv>9.8</Ratingdiv>
+            <Ratingword>Exceptional</Ratingword>
+          </RatingContainer>
+          <InfoIcon style={{ fontSize: "12px" }} />
+        </RightSide>
+      </Data>
+
+      {/* // this for forth  */}
+
       <p
         style={{
           color: "#626e79",

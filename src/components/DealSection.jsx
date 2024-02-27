@@ -3,8 +3,8 @@ import styled from "styled-components";
 import download1 from "../Photos/download1.png";
 
 const DealBox = styled.div`
-  margin-top: 40px; /* Use margin-top instead of padding-top */
-  overflow-y: auto; /* Add overflow-y to enable vertical scrolling */
+  margin-top: 40px;
+  overflow-y: auto;
   max-height: calc(100vh - 40px);
 `;
 
@@ -18,14 +18,19 @@ const Title = styled.div`
 const Container = styled.div`
   display: flex;
   justify-content: center;
-  padding: 0 20px; /* Adjust the left and right padding for blank space */
+  padding: 0 20px;
 `;
 
 const CardContainer = styled.div`
   padding-top: 30px;
   display: flex;
-  gap: 20px; /* Adjust the gap between cards */
+  flex-wrap: wrap; 
+  gap: 20px;
   padding-left: 230px;
+  justify-content: center; 
+  @media only screen and (max-width: 768px) {
+    padding-left: 20px; 
+  }
 `;
 
 const Card = styled.div`
@@ -36,13 +41,10 @@ const Card = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: 40px; */
 `;
 
 const Img = styled.img`
   margin-top: 50px;
-  /* margin-bottom: 120px; */
-  /* margin-bottom: 60px; */
 `;
 
 const Discount = styled.div`
@@ -66,9 +68,8 @@ const Percentageoff = styled.div`
   margin-right: 20px;
   font-size: 12px;
   border-radius: 5px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 `;
+
 const Offname = styled.div`
   display: flex;
   justify-content: center;
@@ -79,8 +80,6 @@ const Offname = styled.div`
   border-radius: 5px;
   font-size: 12px;
   margin-right: 30px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 `;
 
 const Discountname = styled.div`
@@ -89,27 +88,31 @@ const Discountname = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
 const Itemname = styled.div``;
+
 const Description = styled.div`
   margin-right: 50px;
   color: gray;
 `;
+
 const Pricesection = styled.div`
   display: flex;
-  /* margin-right: 80px; */
   margin-top: 20px;
   align-items: flex-start;
 `;
+
 const Price = styled.div`
   margin-right: 10px;
 `;
+
 const Actualprice = styled.div`
-  /* padding-left:20px; */
   margin-right: 10px;
   font-size: 13px;
   margin-top: 4px;
   color: gray;
 `;
+
 const Offper = styled.div`
   color: red;
   font-size: 8px;
@@ -133,20 +136,18 @@ const Special = styled.div`
 `;
 
 const Buttonend = styled.button`
-background-color:blue;
-color: white;
-margin-left: 250px;
-height:42px;
-width: 97px;
-border-radius: 6px;
-margin-top:16px;
-
-
-/* margin-bottom:20px */
+  background-color: blue;
+  color: white;
+  margin-left: 250px;
+  height: 42px;
+  width: 97px;
+  border-radius: 6px;
+  margin-top: 16px;
+  @media only screen and (max-width: 768px) {
+    margin-left: auto; /* Move the button to the right on smaller screens */
+    margin-right: 20px; /* Add some margin to separate from other elements */
+  }
 `;
-
-
-
 
 const DealSection = () => {
   return (

@@ -128,6 +128,26 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
+const Special = styled.div`
+  display: flex;
+`;
+
+const Buttonend = styled.button`
+background-color:blue;
+color: white;
+margin-left: 250px;
+height:42px;
+width: 97px;
+border-radius: 6px;
+margin-top:16px;
+
+
+/* margin-bottom:20px */
+`;
+
+
+
+
 const DealSection = () => {
   return (
     <DealBox>
@@ -195,6 +215,20 @@ const DealSection = () => {
           </Card>
         </CardContainer>
       </Container>
+      <Special>
+        <p
+          style={{
+            paddingLeft: "275px",
+            color: "gray",
+            fontSize: "30px",
+            marginTop: "20px",
+            marginBottom: "12px",
+          }}
+        >
+          Sign up and get exclusive special deals
+        </p>
+        <Buttonend>Signup</Buttonend>
+      </Special>
     </DealBox>
   );
 };

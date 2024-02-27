@@ -4,6 +4,7 @@ import download1 from "../Photos/download1.png";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 import DiamondOutlinedIcon from "@mui/icons-material/DiamondOutlined";
+import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
 
 const Container = styled.div`
   /* display: flex; */
@@ -130,6 +131,9 @@ const Diamond = styled(DiamondOutlinedIcon)`
   color: white;
 `;
 
+const Ticked = styled(CheckCircleOutlineOutlinedIcon)`
+color:blue;
+`
 const Middle = () => {
   return (
     <Container>
@@ -301,11 +305,15 @@ const Middle = () => {
             Interface for Professional Websites and Online Stores (Black/Blue)
           </span>
           <p style={{ paddingTop: "13px" }}>Main Highlight</p>
-          <p style={{ paddingTop: "13px", paddingLeft: "15px" }}>
-            [What You Get]: Receive the WixPro website builder suite, access to
-            premium design templates, an extensive library of widgets and apps,
-            and detailed step-by-step guides.
+          <p style={{ paddingTop: "15px", paddingLeft: "15px",backgroundColor:'#FFF4ED' }}>
+           <p style={{marginBottom:'5px', marginLeft:'20px'}}>Building Responsive</p>
+           <p style={{marginBottom:'5px',  marginLeft:'20px'}}>Cool</p>
+           <p style={{marginLeft:'20px'}}>Docs</p>
           </p>
+          <p>Why We love it</p>
+          <p style={{display:'flex' , marginTop:'5px'}}><Ticked/> Documentation  </p>
+          <p style={{display:'flex' , marginTop:'5px'}}><Ticked/>Easy use </p>
+          <p style={{display:'flex' , marginTop:'5px'}}><Ticked/>Outof Box </p>
           <Show>
             <div>Show more</div>
             <Keydown />

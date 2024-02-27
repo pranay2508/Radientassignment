@@ -3,6 +3,7 @@ import styled from "styled-components";
 import download1 from "../Photos/download1.png";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
+import DiamondOutlinedIcon from "@mui/icons-material/DiamondOutlined";
 
 const Container = styled.div`
   /* display: flex; */
@@ -99,6 +100,36 @@ const RatingContainer = styled.div`
   gap: 15px;
 `;
 
+const Box = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff7724;
+  color: white;
+  width: 136px;
+
+  height: 34px;
+  margin-top: 20px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  margin-bottom: 20px;
+  //css for the p tag inside the box
+  & > div > p {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    padding-left: 8px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+`;
+const Diamond = styled(DiamondOutlinedIcon)`
+  color: white;
+`;
+
 const Middle = () => {
   return (
     <Container>
@@ -148,6 +179,12 @@ const Middle = () => {
       </Data>
 
       {/* // this is for second  */}
+      <Box>
+        <Diamond />
+        <div>
+          <p>Best Choice</p>
+        </div>
+      </Box>
       <p
         style={{
           color: "#626e79",
@@ -155,7 +192,7 @@ const Middle = () => {
           paddingBottom: "40px",
         }}
       >
-        1
+        2
       </p>
       <Data>
         <LeftSide>
@@ -201,7 +238,7 @@ const Middle = () => {
           paddingBottom: "40px",
         }}
       >
-        1
+        3
       </p>
       <Data>
         <LeftSide>
@@ -247,7 +284,7 @@ const Middle = () => {
           paddingBottom: "40px",
         }}
       >
-        1
+        4
       </p>
       <Data>
         <LeftSide>

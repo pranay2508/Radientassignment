@@ -30,7 +30,7 @@ const CardContainer = styled.div`
 
 const Card = styled.div`
   width: 280px;
-  height:400px;
+  height: 400px;
   background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
@@ -40,12 +40,13 @@ const Card = styled.div`
 `;
 
 const Img = styled.img`
-margin-top: 50px;
+  margin-top: 50px;
   /* margin-bottom: 120px; */
   /* margin-bottom: 60px; */
 `;
 
 const Discount = styled.div`
+  color: #074786;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,7 +60,7 @@ const Percentageoff = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: blue;
+  background-color: gray;
   width: 53px;
   height: 20px;
   margin-right: 20px;
@@ -74,7 +75,7 @@ const Offname = styled.div`
   align-items: center;
   width: 91px;
   height: 20px;
-  background-color: green;
+  background-color: gray;
   border-radius: 5px;
   font-size: 12px;
   margin-right: 30px;
@@ -91,6 +92,7 @@ const Discountname = styled.div`
 const Itemname = styled.div``;
 const Description = styled.div`
   margin-right: 50px;
+  color: gray;
 `;
 const Pricesection = styled.div`
   display: flex;
@@ -99,22 +101,32 @@ const Pricesection = styled.div`
   align-items: flex-start;
 `;
 const Price = styled.div`
-
+  margin-right: 10px;
 `;
 const Actualprice = styled.div`
-/* padding-left:20px; */
-
+  /* padding-left:20px; */
+  margin-right: 10px;
+  font-size: 13px;
+  margin-top: 4px;
+  color: gray;
 `;
 const Offper = styled.div`
+  color: red;
+  font-size: 8px;
+  margin-right: 130px;
+  margin-top: 9px;
 `;
 
 const Button = styled.button`
-width: 292px;
-height: 48px;
-background-color: blue;
-margin-top: 30px;
-cursor: pointer;
-`
+  font-size: 15px;
+  color: white;
+  width: 280px;
+  border-radius: 6px;
+  height: 48px;
+  background-color: blue;
+  margin-top: 30px;
+  cursor: pointer;
+`;
 
 const DealSection = () => {
   return (
@@ -143,8 +155,44 @@ const DealSection = () => {
             </Discountname>
             <Button>View Deal</Button>
           </Card>
-          <Card>Card 2</Card>
-          <Card>Card 3</Card>
+          <Card>
+            <Img src={download1} alt="Description" />
+            <Discount>
+              <Percentageoff>20%</Percentageoff>
+              <Offname>Limited Time</Offname>
+            </Discount>
+            <Discountname>
+              <Itemname>Web Builder1</Itemname>
+              <Description>
+                Computer Modern clasic with wix <p>support</p>
+              </Description>
+              <Pricesection>
+                <Price>$39.96</Price>
+                <Actualprice>$49.96</Actualprice>
+                <Offper>(20% off)</Offper>
+              </Pricesection>
+            </Discountname>
+            <Button>View Deal</Button>
+          </Card>
+          <Card>
+            <Img src={download1} alt="Description" />
+            <Discount>
+              <Percentageoff>20%</Percentageoff>
+              <Offname>Limited Time</Offname>
+            </Discount>
+            <Discountname>
+              <Itemname>Web Builder1</Itemname>
+              <Description>
+                Computer Modern clasic with wix <p>support</p>
+              </Description>
+              <Pricesection>
+                <Price>$39.96</Price>
+                <Actualprice>$49.96</Actualprice>
+                <Offper>(20% off)</Offper>
+              </Pricesection>
+            </Discountname>
+            <Button>View Deal</Button>
+          </Card>
         </CardContainer>
       </Container>
     </DealBox>
